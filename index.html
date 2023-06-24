@@ -1,276 +1,183 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>MyPortfolio</title>
-  </head>
-  <body>
-    
-    <!-- Nav-bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand text-secondary">Denis's</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-    <!-- Akhir Nav-bar -->
-
-    <!-- Jumbotron -->
-    <section id="home" class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 hero">
-                    <h2 class="display-4 jintro">Hi, I'm
-                        <span>Denis</span>
-                    </h2>
-                    <p class="ptype">
-                        <span class="typed-text"></span>
-                        <span class="cursor"></span>
-                    </p>
-                    <div class="sosmed">
-                        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=dnshaniff@gmail.com" target="_blank" class="text-decoration-none text-reset">
-                            <i class="bi bi-envelope-fill fa-2x"></i>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent p-0">
+            <div class="container">
+                <a class="navbar-brand" href="#">dnshaniff</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#company">Company</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End -->
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-12 hero-left">
+                        <h1 class="my-name">Denis Hanif Prasetya</h1>
+                        <h4 class="title">
+                            <span class="typed-text"></span>
+                            <span class="cursor"></span>
+                        </h4>
+                        <p class="slogan mb-4">Life is dull until you find an error in your code, just a missing <strong>semicolon</strong>, and the satisfaction of fixing it brings joy.</p>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5 col-sm-12 col-12 me-2">
+                                <a href="" target="_blank" class="btn-resume">Resume</a>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=dnshaniff@gmail.com" target="_blank" class="btn-email"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="https://github.com/dnshaniff" target="_blank" class="btn-github"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/denis-hanif-prasetya-7a815516b/" target="_blank" class="btn-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-end hero-right">
+                        <img src="img/IMG_3443@3x.png" alt="" class="my-pict col-6">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-12 mt-5 mb-4 hero-bottom">
+                        <p class="elevator-pitch text-center">
+                            During my time as a web developer, I've had the pleasure of working with some great companies, working side by side to design and develop new apps and improve upon existing apps. Although my experience spans less than a year, I’m enthusiastic about showcasing my work and growth in this field.<br><span>#css #bootstrap #javascript #php #laravel</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End -->
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-12 mb-5">
+                        <h2 class="title-section mb-5">About Me</h2>
+                        <h3>Hi there! 👋 I'm <strong class="color-secondary">Denis</strong></h3>
+                        <div class="row mb-5">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 about-content">
+                                <p>
+                                    a passionate web developer from Indonesia. I love creating beautiful and functional websites that make a lasting impact. From clean code to intuitive interfaces, I pay attention to every detail to ensure a seamless browsing experience.<br>
+                                    I'm constantly learning and keeping up with the latest web development trends. HTML, CSS, PHP and JavaScript are my go-to tools, and I enjoy exploring new frameworks and libraries.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 about-content">
+                                <p>
+                                    When I'm not coding, you'll find me enjoying my hobbies like reading comics, watching films, listening to music, and playing games. These activities bring joy to my life and help me relax and recharge.<br>
+                                    I'm excited about the possibilities that web development offers and I'm eager to contribute my skills and creativity to meaningful projects. Let's work together to bring your vision to life!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End -->
+        <!-- Portfolio -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-center title-section">Portfolio</h3>
+                    <h1 class="text-center sub-title-section">Latest Project</h1>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 portfolio-content mb-2">
+                        <a href=""><img src="img/Screenshot_4.png" alt="Website MII" class="img-fluid mb-3"></a>
+                        <a href="" class="text-decoration-none"><h3>Website Company Profile and Dashboard MII</h3></a>
+                        <p>
+                            On-Progress
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 portfolio-content mb-2">
+                        <a href="https://dnshaniff.github.io/ifd-calculator/"><img src="img/Screenshot_3.png" alt="Calculator" class="img-fluid mb-3"></a>
+                        <a href="https://dnshaniff.github.io/ifd-calculator/" class="text-decoration-none"><h3>Calculator</h3></a>
+                        <p>Course Assignment: 'Intro to Front-end Development' by Digitalent Kominfo.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 portfolio-content mb-2">
+                        <a href="https://dnshaniff.github.io/ifd-j7/"><img src="img/Screenshot_2.png" alt="Landing Page" class="img-fluid mb-3"></a>
+                        <a href="https://dnshaniff.github.io/ifd-j7/" class="text-decoration-none"><h3>Landing Page</h3></a>
+                        <p>Course Assignment: 'Intro to Front-end Development' by Digitalent Kominfo.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 portfolio-content mb-5">
+                        <a href="https://dnshaniff.github.io/old-portfolio/"><img src="img/Screenshot_1.png" alt="First Portfolio" class="img-fluid mb-3"></a>
+                        <a href="https://dnshaniff.github.io/old-portfolio/" class="text-decoration-none"><h3>My First Portfolio</h3></a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo blanditiis ea fugit tempora, alias culpa porro ipsa aperiam laudantium.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End -->
+        <!-- Company -->
+        <section class="company" id="company">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-center title-section">Companies</h3>
+                    <h1 class="text-center sub-title-section">The company I've had<br>the opportunity to work</h1>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-5 text-center">
+                        <img src="img/mii.png" alt="Logo MII" class="img-fluid logo-company">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End -->
+        <!-- Button to Top -->
+        <button type="button"class="btn btn-lg rounded-circle" id="btn-back-to-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <!-- End -->
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                        <h1 class="brand-footer mb-3">dnshaniff</h1>
+                        <h4 class="footer-quote">
+                            Collaboration is the key to innovation. Let's create something amazing together!<br>If you have any inquiries or would like to work together,feel free to reach out to me.
+                        </h4>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-center mb-5">
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=dnshaniff@gmail.com" target="_blank" class="text-decoration-none me-3 btn-email">
+                            <i class="fa-solid fa-envelope"></i>
                         </a>
-                        <a href="https://www.instagram.com/envoy.05/?hl=en" target="_blank" class="text-decoration-none text-reset">
-                            <i class="bi bi-instagram fa-2x"></i>
+                        <a href="https://github.com/dnshaniff" target="_blank" class="text-decoration-none me-3 btn-github">
+                            <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://github.com/dnshaniff" target="_blank" class="text-decoration-none text-reset">
-                            <i class="bi bi-github fa-2x"></i>
-                        </a>
-                        <a href="https://wa.me/6281319229466" target="_blank" class="text-decoration-none text-reset">
-                            <i class="bi bi-whatsapp"></i>
+                        <a href="https://www.linkedin.com/in/denis-hanif-prasetya-7a815516b/" target="_blank" class="text-decoration-none btn-linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
-                    <a href="cv/DenisHanif-CV.pdf" target="_blank" class="btn btn-primary cv">Download CV 
-                        <i class="bi bi-download"></i>
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/jumbotron.png" alt="" class="img-fluid jimg">
+                    <hr class="mt-5 mb-4">
+                    <p class="color-gray text-center">&copy; 2023</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row text-center mb-4">
-                <div class="col">
-                    <h3 class="display-6"><span>About</span> 
-                        Me
-                    </h3>
-                    <p class="intro text-secondary">My Introduction</p>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="img/poseright.png" alt="" class="img-fluid">
-                </div>
-                <div class="col-lg-8 col-sm-12">
-                    <p >Hi 👋, my name is Denis Hanif Prasetya.</p>
-                    <p>I live in Indonesia and I graduated with a bachelor degree in Computer Science at Universitas Mercu Buana.</p>
-                    <hr class="my-4">
-                    <p>I've an experience as Photocopier Engineering for 6 years, and have experience as IT Support less than 1 year.</p>
-                    <p>I'm a person who is interested in website development. I'm passionate about building a career in web development, to which I would bring dedication, enthusiasm and creativity. For now, I spend my time learning to build websites, especially in the Front-End Developer.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Akhir About -->
-
-    <!-- Skills -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <div class="row text-center mb-4">
-                <h3 class="display-6">My
-                    <span>Skills</span>
-                </h3>
-            </div>
-            <div class="row all-skill d-flex justify-content-center">
-                <div class="col-lg-3 mb-4 d-flex justify-content-center">
-                    <div class="main-skill skill-1">
-                        <div class="card-skills text-center">
-                            <img src="img/icon/html.png" alt="" class="img-fluid">
-                            <h6>HTML</h6>
-                            <p>80%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-4 d-flex justify-content-center">
-                    <div class="main-skill skill-2">
-                        <div class="card-skills text-center">
-                            <img src="img/icon/css.png" alt="" class="img-fluid">
-                            <h6>CSS</h6>
-                            <p>65%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-4 d-flex justify-content-center">
-                    <div class="main-skill skill-3">
-                        <div class="card-skills text-center">
-                            <img src="img/icon/js.png" alt="" class="img-fluid">
-                            <h6>Java Script</h6>
-                            <p>20%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-4 d-flex justify-content-center">
-                    <div class="main-skill skill-4">
-                        <div class="card-skills text-center" class="img-fluid">
-                            <img src="img/icon/bstrap-panel.png" alt="">
-                            <h6>Bootstrap</h6>
-                            <p>50%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-4 d-flex justify-content-center">
-                    <div class="main-skill skill-5">
-                        <div class="card-skills text-center" class="img-fluid">
-                            <img src="img/icon/php.png" alt="">
-                            <h6>PHP</h6>
-                            <p>25%</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Akhir Skills -->
-
-    <!-- Projects -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center mb-4">
-                    <h3 class="display-6">My
-                        <span>Projects</span>
-                    </h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 justify-content-center d-flex mb-4">
-                    <div class="main-card">
-                        <div class="card-image">
-                            <img src="img/projects/first.jpg" alt="First" class="img-fluid">
-                        </div>
-                        <div class="card-body d-flex justify-content-center">
-                            <a href="" target="_blank" class="btn btn-primary soon">Coming Soon</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 justify-content-center d-flex mb-4">
-                    <div class="main-card">
-                        <div class="card-image">
-                            <img src="img/projects/sec.jpg" alt="Second" class="img-fluid">
-                        </div>
-                        <div class="card-body d-flex justify-content-center">
-                            <a href="" target="_blank" class="btn btn-primary soon">Coming Soon</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 justify-content-center d-flex mb-4">
-                    <div class="main-card">
-                        <div class="card-image">
-                            <img src="img/projects/thrd.jpg" alt="Third" class="img-fluid">
-                        </div>
-                        <div class="card-body d-flex justify-content-center">
-                            <a href="" target="_blank" class="btn btn-primary soon">Coming Soon</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Akhir Projects -->
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="col text-center mb-4">
-                <h4 class="display-5"><span>Contact</span>
-                Me
-                </h4>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.384117557563!2d107.04288691531893!3d-6.212965762587107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ecd488a1b83%3A0xcb973dc03312a980!2sJl.%20Kp.%20Gebang%2C%20Satriajaya%2C%20Kec.%20Tambun%20Utara%2C%20Kabupaten%20Bekasi%2C%20Jawa%20Barat%2017510!5e0!3m2!1sen!2sid!4v1643026257117!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <form>
-                        <div class="mb-3">
-                          <label for="name" class="form-label">Full Name :</label>
-                          <input type="text" class="form-control" id="name">
-                        </div>
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email :</label>
-                          <input type="email" class="form-control" id="email" placeholder="email@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="pesan" class="form-label">Message :</label>
-                            <textarea class="form-control" id="pesan" rows="3"></textarea>
-                          </div>
-                        <button type="submit" class="btn btn-primary send">Send</button>
-                      </form>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/contact.png" alt="" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- Akhir Contact -->
-  
-<button type="button"class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">Back to Top
-  <i class="bi bi-arrow-up-short"></i>
-</button>
-
-<!-- Footer -->
-    <footer class="text-muted bg-dark text-center pt-2 pb-1">
-        <p>Created by <a href="https://www.instagram.com/envoy.05/?hl=en" class="text-white-50 fw-bold text-decoration-none" target="_blank">Denis Hanif Prasetya</a>.</p>
-        <p>Copyright 2022 | All Rights Reserved</p>
-    </footer>
-<!-- Akhir Footer -->
-
-    <button type="button"class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-        <i class="bi bi-arrow-up-short"></i>
-    </button>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <script src="js/script.js"></script>
-
-  </body>
+        </footer>
+        <!-- End -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
