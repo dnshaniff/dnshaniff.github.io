@@ -148,8 +148,7 @@ html { overflow-x: hidden; }
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
     .btn-email { margin-left: 2rem; }
     .btn-github { margin-left: 6rem !important; }
-    .btn-linkedin { margin-left: 10rem
-         !important; }
+    .btn-linkedin { margin-left: 10rem !important; }
 }
 @media only screen and (max-width: 991px) {
     .btn-email,.btn-github,.btn-linkedin { margin-top: 1rem !important; }
