@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url("//fonts.googleapis.com/css?family=Quicksand:400,600,700,800,900");
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,900");
 :root {
@@ -8,9 +10,7 @@
     --gray: #88938A;
     --light: #fff;
 }
-html {
-    overflow-x: hidden;
-}
+html { overflow-x: hidden; }
 .color-secondary {color: var(--secondary);}
 .color-gray {color: var(--gray);}
 .title-section {
@@ -80,7 +80,7 @@ html {
     background-color: var(--primary);
     height: auto;
     width: auto;
-    padding-top: 16rem;
+    padding-top: 20rem;
 }
 .my-name {
     color: #24C7A1;
@@ -145,6 +145,15 @@ html {
     margin-top: -1rem;
     transition: color .4s ease-out;
 }
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .btn-email { margin-left: 2rem; }
+    .btn-github { margin-left: 6rem !important; }
+    .btn-linkedin { margin-left: 10rem
+         !important; }
+}
+@media only screen and (max-width: 991px) {
+    .btn-email,.btn-github,.btn-linkedin { margin-top: 1rem !important; }
+}
 .btn-github {margin-left: 4rem;}
 .btn-linkedin {margin-left: 8rem;}
 .btn-email:hover, .btn-github:hover, .btn-linkedin:hover {color: #cecece;}
@@ -153,16 +162,24 @@ html {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
+.elevator-pitch { margin-top: 5rem; }
 .elevator-pitch span {color: var(--gray); transition: color .3s ease-out;}
 .elevator-pitch span:hover {color: #cecece;}
 .my-pict {
     background-image: url(../img/blob.svg);
-    background-position-x: 1.6rem;
+    background-position-x: .8rem;
     background-position-y: 1.5rem;
     background-size: 90%;
     background-repeat: no-repeat;
     border-radius: 50px;
     margin-top: -6rem;
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .my-pict { margin-top: 0 !important; }
+}
+@media only screen and (max-width: 767px) {
+    .my-pict { margin-top: 10rem !important; }
+    .pict-sm { text-align: center !important; }
 }
 .hero-left, .hero-right, .hero-bottom {
     animation-duration: 2s;
@@ -206,6 +223,7 @@ html {
       opacity: 1;
     }
 }
+/* End */
 
 /* About */
 .about {
