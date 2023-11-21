@@ -161,7 +161,7 @@ html { overflow-x: hidden; }
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
-.elevator-pitch { margin-top: 5rem; }
+.elevator-pitch { margin-top: 3rem; }
 .elevator-pitch span {color: var(--gray); transition: color .3s ease-out;}
 .elevator-pitch span:hover {color: #cecece;}
 .my-pict {
