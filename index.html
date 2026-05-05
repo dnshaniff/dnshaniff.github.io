@@ -1,193 +1,809 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">dnshaniff</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="#hero">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#company">Company</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denis Hanif | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0B0F14',
+              surface: '#111827',
+              accent: '#F59E0B'
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Background + Hero CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="text-gray-200 font-sans">
+    <!-- NAVBAR -->
+    <header id="siteNavbar" class="w-full fixed top-0 z-50 bg-transparent border-b border-transparent transition-[background-color,border-color,box-shadow,backdrop-filter] duration-300 ease-out">
+      <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <a href="#" id="logoHome" class="flex items-center gap-3">
+          <span class="text-lg font-semibold text-white">DH</span>
+          <span class="hidden sm:inline text-sm text-gray-300">Denis Hanif Prasetya</span>
+        </a>
+
+        <!-- DESKTOP NAV MENU -->
+        <nav class="hidden md:flex items-center gap-10 text-sm font-medium">
+          <a href="#work" class="nav-link text-gray-400 hover:text-white transition">Work</a>
+          <a href="#approach" class="nav-link text-gray-400 hover:text-white transition">Approach</a>
+          <a href="#tech-stack" class="nav-link text-gray-400 hover:text-white transition">Tech Stack</a>
+          <a href="#contact" class="nav-link text-gray-400 hover:text-white transition">Contact</a>
         </nav>
-        <!-- End -->
-        <!-- Hero -->
-        <section class="hero" id="hero">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 hero-left">
-                        <h1 class="my-name">Denis Hanif Prasetya</h1>
-                        <h4 class="title">
-                            <span class="typed-text"></span>
-                            <span class="cursor"></span>
-                        </h4>
-                        <p class="slogan mb-4">Life is dull until you find an error in your code, just a missing <strong>semicolon</strong>, and the satisfaction of fixing it brings joy.</p>
-                        <div class="row">
-                            <!-- <div class="col-lg-4 col-md-5 col-sm-12 col-12 me-2">
-                                <a href="" target="_blank" class="btn-resume">Resume</a>
-                            </div> -->
-                            <div class="col-lg-7 col-md-7 col-sm-12 col-12">
-                                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=dnshaniff@gmail.com" target="_blank" class="btn-email"><i class="fa-solid fa-envelope"></i></a>
-                                <a href="https://github.com/dnshaniff" target="_blank" class="btn-github"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/denis-hanif-prasetya-7a815516b/" target="_blank" class="btn-linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-end hero-right pict-sm
-                    ">
-                        <img src="img/IMG_3443@3x.png" alt="" class="my-pict col-lg-8 col-md-12 col-sm-10 col-10">
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 col-md-10 col-sm-12 col-12 mb-4 hero-bottom">
-                        <p class="elevator-pitch text-center">
-                            With a diverse work experience, from Photocopier Technician to IT Support and thriving as a Web Developer specializing in Laravel and PHP. Currently learning JavaScript, my passion lies in advancing as a Web Developer. I stay updated on industry trends and emerging technologies, continually enhancing my skills to contribute effectively to dynamic and innovative projects
-                            <br><span>#php #laravel #html #bootstrap #javascript</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End -->
-        <!-- About -->
-        <section class="about" id="about">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 col-md-10 col-sm-12 col-12 mb-5">
-                        <h2 class="title-section mb-5">About Me</h2>
-                        <h3>Hi there! 👋 I'm <strong class="color-secondary">Denis</strong></h3>
-                        <div class="row mb-5">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 about-content">
-                                <p>
-                                    a passionate web developer from Indonesia. I love creating beautiful and functional websites that make a lasting impact. From clean code to intuitive interfaces, I pay attention to every detail to ensure a seamless browsing experience.<br>
-                                    I'm constantly learning and keeping up with the latest web development trends. HTML, CSS, PHP and JavaScript are my go-to tools, and I enjoy exploring new frameworks and libraries.
-                                </p>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 about-content">
-                                <p>
-                                    When I'm not coding, you'll find me enjoying my hobbies like reading comics, watching films, listening to music, and playing games. These activities bring joy to my life and help me relax and recharge.<br>
-                                    I'm excited about the possibilities that web development offers and I'm eager to contribute my skills and creativity to meaningful projects. Let's work together to bring your vision to life!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End -->
-        <!-- Portfolio -->
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="row">
-                    <h3 class="text-center title-section">Portfolio</h3>
-                    <h1 class="text-center sub-title-section">Latest Project</h1>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 portfolio-content mb-2">
-                        <a href="https://msngloballogistics.com/"><img src="img/Screenshot 2023-11-21 161131.png" alt="Website MSN" class="img-fluid mb-3"></a>
-                        <a href="https://msngloballogistics.com/" class="text-decoration-none"><h3>Website Company Profile MSN</h3></a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo blanditiis ea fugit tempora, alias culpa porro ipsa aperiam laudantium.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 portfolio-content mb-2">
-                        <a href="javascript:;"><img src="img/Screenshot_4.png" alt="Website MII" class="img-fluid mb-3"></a>
-                        <a href="javascript:;" class="text-decoration-none"><h3>Website Company Profile and Dashboard MII</h3></a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo blanditiis ea fugit tempora, alias culpa porro ipsa aperiam laudantium.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 portfolio-content mb-2">
-                        <a href="https://dnshaniff.github.io/ifd-calculator/" target="_blank"><img src="img/Screenshot_3.png" alt="Calculator" class="img-fluid mb-3"></a>
-                        <a href="https://dnshaniff.github.io/ifd-calculator/" target="_blank" class="text-decoration-none"><h3>Calculator</h3></a>
-                        <p>Course Assignment: 'Intro to Front-end Development' by Digitalent Kominfo.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 portfolio-content mb-2">
-                        <a href="https://dnshaniff.github.io/ifd-j7/" target="_blank"><img src="img/Screenshot_2.png" alt="Landing Page" class="img-fluid mb-3"></a>
-                        <a href="https://dnshaniff.github.io/ifd-j7/" target="_blank" class="text-decoration-none"><h3>Landing Page</h3></a>
-                        <p>Course Assignment: 'Intro to Front-end Development' by Digitalent Kominfo.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 portfolio-content mb-5">
-                        <a href="https://dnshaniff.github.io/old-portfolio/" target="_blank"><img src="img/Screenshot_1.png" alt="First Portfolio" class="img-fluid mb-3"></a>
-                        <a href="https://dnshaniff.github.io/old-portfolio/" target="_blank" class="text-decoration-none"><h3>My First Portfolio</h3></a>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo blanditiis ea fugit tempora, alias culpa porro ipsa aperiam laudantium.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End -->
-        <!-- Company -->
-        <section class="company" id="company">
-            <div class="container">
-                <div class="row">
-                    <h3 class="text-center title-section">Companies</h3>
-                    <h1 class="text-center sub-title-section">The company I've had<br>the opportunity to work</h1>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-5 text-center">
-                        <img src="img/mii.png" alt="Logo MII" class="img-fluid logo-company me-4">
-                        <img src="img/msn.png" alt="Logo MSN" class="img-fluid logo-company">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End -->
-        <!-- Button to Top -->
-        <button type="button"class="btn btn-lg rounded-circle" id="btn-back-to-top">
-            <i class="fa-solid fa-arrow-up"></i>
+
+        <!-- MOBILE HAMBURGER -->
+        <button
+          id="menuBtn"
+          type="button"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-gray-700 text-gray-300 hover:text-white hover:border-gray-500 transition"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open menu</span>
+          <svg id="menuIcon" class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
         </button>
-        <!-- End -->
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
-                        <h1 class="brand-footer mb-3">dnshaniff</h1>
-                        <h4 class="footer-quote">
-                            Collaboration is the key to innovation. Let's create something amazing together!<br>If you have any inquiries or would like to work together,feel free to reach out to me.
-                        </h4>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-12 text-start mb-5">
-                        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=dnshaniff@gmail.com" target="_blank" class="text-decoration-none me-3 btn-email">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                        <a href="https://github.com/dnshaniff" target="_blank" class="text-decoration-none me-3 btn-github">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/denis-hanif-prasetya-7a815516b/" target="_blank" class="text-decoration-none btn-linkedin">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
-                    <hr class="mt-5 mb-4">
-                    <p class="color-gray text-center">&copy; 2023</p>
+
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="md:hidden hidden border-t border-gray-800 bg-primary/95 backdrop-blur-md">
+        <nav class="max-w-6xl mx-auto px-6 py-4 grid gap-4 text-sm font-medium">
+          <a href="#work" class="text-white">Work</a>
+          <a href="#approach" class="text-gray-400 hover:text-white transition">Approach</a>
+          <a href="#tech-stack" class="text-gray-400 hover:text-white transition">Tech Stack</a>
+          <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+          <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative overflow-hidden min-h-[580px] pt-36 pb-10 px-6">
+      <div class="hero-dots-yellow"></div>
+      <div class="hero-dots-blue"></div>
+
+      <div class="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-[0.95fr_1.05fr] items-center gap-14">
+
+        <!-- LEFT -->
+        <div>
+          <p class="hero-role text-xs tracking-widest text-gray-500 mb-6">
+            FULL-STACK DEVELOPER
+          </p>
+
+          <h1 class="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+            I build internal systems that simplify
+            <span class="text-accent">operations</span>
+            and scale business
+            <span class="text-accent">workflows.</span>
+          </h1>
+
+          <p class="text-gray-400 max-w-md mb-8">
+            Focused on developing reliable web applications for HR, IT, operations,
+            finance, warehouse, audit, and cross-department business processes.
+          </p>
+
+          <a href="#work" class="inline-flex items-center gap-6 pb-3 border-b-2 border-accent text-accent font-medium group">
+            View My Work
+            <span class="transition group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-stage">
+            <!-- DOTS BACKGROUND -->
+            <span class="visual-dots dots-yellow-top"></span>
+            <span class="visual-dots dots-blue-bottom"></span>
+      
+            <!-- LAYER 1: MAIN DASHBOARD WINDOW -->
+            <div class="window">
+              <div class="window-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+      
+              <div class="dashboard">
+      
+                <!-- SIDEBAR / MENU -->
+                <div class="sidebar">
+                  <div class="side-row">
+                    <span class="side-icon"></span>
+                    <span class="side-line"></span>
+                  </div>
+      
+                  <div class="side-row">
+                    <span class="side-icon"></span>
+                    <span class="side-line"></span>
+                  </div>
+      
+                  <div class="side-row">
+                    <span class="side-icon"></span>
+                    <span class="side-line"></span>
+                  </div>
+      
+                  <div class="side-row">
+                    <span class="side-icon"></span>
+                    <span class="side-line"></span>
+                  </div>
+      
+                  <div class="side-row">
+                    <span class="side-icon"></span>
+                    <span class="side-line"></span>
+                  </div>
                 </div>
+      
+                <!-- MAIN AREA -->
+                <div class="main-grid">
+      
+                  <!-- STATS -->
+                  <div class="stats">
+                    <div class="stat">
+                      <div class="label">Total Requests</div>
+                      <div class="value">
+                        1,248
+                        <small>+12.5%</small>
+                      </div>
+                    </div>
+      
+                    <div class="stat">
+                      <div class="label">Open Tickets</div>
+                      <div class="value">
+                        32
+                        <small class="down">-8.2%</small>
+                      </div>
+                    </div>
+      
+                    <div class="stat">
+                      <div class="label">In Progress</div>
+                      <div class="value">
+                        210
+                        <small>+15.7%</small>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- CHART -->
+                  <div class="chart">
+                    <div class="chart-title">Request Overview</div>
+      
+                    <div class="chart-plot">
+                      <div class="y-axis">
+                        <span>300</span>
+                        <span>200</span>
+                        <span>100</span>
+                        <span>0</span>
+                      </div>
+      
+                      <div class="plot-area">
+                        <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+                          <!-- grid lines -->
+                          <line x1="0" y1="10" x2="300" y2="10" />
+                          <line x1="0" y1="42" x2="300" y2="42" />
+                          <line x1="0" y1="74" x2="300" y2="74" />
+                          <line x1="0" y1="106" x2="300" y2="106" />
+      
+                          <line x1="0" y1="10" x2="0" y2="106" />
+                          <line x1="50" y1="10" x2="50" y2="106" />
+                          <line x1="100" y1="10" x2="100" y2="106" />
+                          <line x1="150" y1="10" x2="150" y2="106" />
+                          <line x1="200" y1="10" x2="200" y2="106" />
+                          <line x1="250" y1="10" x2="250" y2="106" />
+                          <line x1="300" y1="10" x2="300" y2="106" />
+      
+                          <!-- blue line -->
+                          <path
+                            d="M0 88 C18 88 30 80 50 72 C72 64 82 38 100 34 C122 30 136 40 150 52 C164 66 180 70 200 68"
+                            fill="none"
+                            stroke="#3b82f6"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+      
+                          <!-- yellow line -->
+                          <path
+                            d="M200 68 C218 68 232 54 250 40 C270 26 284 18 300 10"
+                            fill="none"
+                            stroke="#f4b41b"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+      
+                          <!-- points -->
+                          <circle cx="0" cy="88" r="3.2" class="point-blue" />
+                          <circle cx="50" cy="72" r="3.2" class="point-blue" />
+                          <circle cx="100" cy="34" r="3.2" class="point-blue" />
+                          <circle cx="150" cy="52" r="3.2" class="point-blue" />
+                          <circle cx="200" cy="68" r="3.2" class="point-yellow" />
+                          <circle cx="250" cy="40" r="3.2" class="point-yellow" />
+                          <circle cx="300" cy="10" r="3.2" class="point-yellow" />
+                        </svg>
+      
+                        <div class="x-axis">
+                          <span>Jan</span>
+                          <span>Feb</span>
+                          <span>Mar</span>
+                          <span>Apr</span>
+                          <span>May</span>
+                          <span>Jun</span>
+                          <span>Jul</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
             </div>
-        </footer>
-        <!-- End -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
-    </body>
+      
+            <!-- LAYER 2: DEPARTMENTS -->
+            <div class="departments-card">
+              <div class="departments-title">Departments</div>
+      
+              <div class="departments-content">
+                <div class="department-donut"></div>
+      
+                <div class="departments-legend">
+                  <span class="legend-hr">HR</span>
+                  <span class="legend-it">IT</span>
+                  <span class="legend-ga">GA</span>
+                  <span class="legend-legal">Legal</span>
+                </div>
+              </div>
+            </div>
+      
+            <!-- LAYER 3: CODE ICON -->
+            <div class="code-card">
+              <span>&lt;</span><span>/</span><span>&gt;</span>
+            </div>
+      
+            <!-- LAYER: SYSTEM STATUS -->
+            <div class="system-card">
+              <strong>System Status</strong>
+      
+              <div class="system-row">
+                <span class="system-dot"></span>
+                <small>All systems operational</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="relative px-6 pb-16">
+      <div class="max-w-6xl mx-auto border-t border-slate-700/30 pt-10">
+
+        <!-- HEADER -->
+        <div class="mb-8">
+          <p class="text-xs tracking-[0.35em] uppercase text-gray-500 font-bold">
+            Selected Work
+          </p>
+        </div>
+
+        <!-- PROJECT GRID -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          <!-- CARD 1 -->
+          <article class="work-card">
+            <div class="flex items-start justify-between gap-4 mb-5">
+              <div class="flex items-center gap-4">
+                <div class="work-icon blue">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+
+                <div>
+                  <h3>
+                    <a href="http://polewali.mii.id:8000/auth/login" target="_blank" rel="noopener noreferrer">
+                      MIIMS
+                    </a>
+                  </h3>
+                  <p>PT MATS<br>Internasional Indonesia</p>
+                </div>
+              </div>
+
+              <span class="work-badge">Internal System</span>
+            </div>
+
+            <p class="work-desc">
+              Internal management system covering HR, IT ticketing, and the company's main business flow from Sales and Pricing to Operations, Business Development, and Finance.
+            </p>
+
+            <div class="work-preview preview-miims">
+              <div class="preview-sidebar"></div>
+              <div class="preview-content">
+                <div class="preview-top"></div>
+                <div class="preview-grid">
+                  <div></div><div></div>
+                  <div></div><div class="mini-donut"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-tags">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+              <span>Apache</span>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="work-card">
+            <div class="flex items-start justify-between gap-4 mb-5">
+              <div class="flex items-center gap-4">
+                <div class="work-icon yellow">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+
+                <div>
+                  <h3>
+                    <a href="https://apps.theciptagroup.co.id/auth/login" target="_blank" rel="noopener noreferrer">
+                      Cipta Apps
+                    </a>
+                  </h3>
+                  <p>PT Cipta<br>Saksama Indonesia</p>
+                </div>
+              </div>
+
+              <span class="work-badge">Internal System</span>
+            </div>
+
+            <p class="work-desc">
+              Centralized internal platform for cross-department workflows including HR, Quality, Sales, Internal Audit, MR, Engineering, Maintenance, Warehouse, and operational support.
+            </p>
+
+            <div class="work-preview preview-cipta">
+              <div class="preview-sidebar"></div>
+              <div class="preview-content">
+                <div class="preview-top"></div>
+                <svg viewBox="0 0 260 95" class="mini-chart">
+                  <path d="M0 70 L35 55 L70 65 L110 35 L150 58 L190 42 L230 60 L260 25" />
+                </svg>
+                <div class="preview-bottom">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-tags">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+              <span>MSSQL</span>
+              <span>Apache</span>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="work-card">
+            <div class="flex items-start justify-between gap-4 mb-5">
+              <div class="flex items-center gap-4">
+                <div class="work-icon green">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div>
+                  <h3>
+                    <a href="https://goodsaletech.id/auth/login" target="_blank" rel="noopener noreferrer">
+                      GST Apps
+                    </a>
+                  </h3>
+                  <p>PT Good Sale Tech</p>
+                </div>
+              </div>
+
+              <span class="work-badge">Internal System</span>
+            </div>
+
+            <p class="work-desc">
+              Internal system supporting HR employee data, GA asset management, IT ticketing, and Legal document control, with structured data management for daily business operations.
+            </p>
+
+            <div class="work-preview preview-gst">
+              <div class="table-row head"></div>
+              <div class="table-row"></div>
+              <div class="table-row"></div>
+              <div class="table-row"></div>
+              <div class="table-row"></div>
+              <div class="table-row"></div>
+            </div>
+
+            <div class="work-tags">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+              <span>Redis</span>
+              <span>Nginx</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section id="approach" class="relative px-6 pb-14">
+      <div class="max-w-6xl mx-auto border-t border-slate-700/30 pt-8">
+
+        <p class="text-xs tracking-[0.35em] uppercase text-gray-500 font-bold mb-8">
+          My Approach
+        </p>
+
+        <div class="approach-grid">
+
+          <!-- STEP 1 -->
+          <div class="approach-step">
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 7.5C5 6.12 6.12 5 7.5 5h9C17.88 5 19 6.12 19 7.5v5C19 13.88 17.88 15 16.5 15H11l-4 4v-4.1C5.86 14.66 5 13.64 5 12.42V7.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M8.5 10h.01M12 10h.01M15.5 10h.01" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+
+            <h3>1. Understand</h3>
+            <p>
+              I learn the business process, identify pain points, and map the workflow.
+            </p>
+          </div>
+
+          <div class="approach-arrow" aria-hidden="true">
+            <svg viewBox="0 0 32 18" fill="none">
+              <path d="M1 9H29M21 1L29 9L21 17"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="approach-step">
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="5" y="5" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                <rect x="14" y="5" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                <rect x="5" y="14" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                <rect x="14" y="14" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+            </div>
+
+            <h3>2. Design</h3>
+            <p>
+              I design clean database structures and system architecture.
+            </p>
+          </div>
+
+          <div class="approach-arrow" aria-hidden="true">
+            <svg viewBox="0 0 32 18" fill="none">
+              <path d="M1 9H29M21 1L29 9L21 17"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="approach-step">
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M8.5 7L4 12l4.5 5M15.5 7L20 12l-4.5 5M14 5l-4 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <h3>3. Develop</h3>
+            <p>
+              I build and integrate features with clean, maintainable code.
+            </p>
+          </div>
+
+          <div class="approach-arrow" aria-hidden="true">
+            <svg viewBox="0 0 32 18" fill="none">
+              <path d="M1 9H29M21 1L29 9L21 17"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="approach-step">
+            <div class="approach-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M8 17h8.2a3.8 3.8 0 0 0 .64-7.55A5.5 5.5 0 0 0 6.2 8.8 4.1 4.1 0 0 0 8 17Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <h3>4. Deploy</h3>
+            <p>
+              I deploy the application on a secure cloud environment.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section id="tech-stack" class="relative px-6 pb-14">
+      <div class="max-w-6xl mx-auto border-t border-slate-700/30 pt-7">
+
+        <p class="text-xs tracking-[0.35em] uppercase text-gray-500 font-bold mb-7">
+          Tech Stack
+        </p>
+
+        <div class="tech-marquee">
+          <div class="tech-marquee-track">
+
+            <!-- SET 1 -->
+            <div class="tech-stack-list">
+
+              <div class="tech-item laravel">
+                <span class="tech-icon">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+                    alt="Laravel"
+                  />
+                </span>
+                <span>Laravel</span>
+              </div>
+
+              <div class="tech-item php">
+                <span class="tech-icon">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                    alt="PHP"
+                  />
+                </span>
+                <span>PHP</span>
+              </div>
+
+              <div class="tech-item js">
+                <span class="tech-icon">JS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="tech-item mysql">
+                <span class="tech-icon">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                    alt="MySQL"
+                  />
+                </span>
+                <span>MySQL</span>
+              </div>
+
+              <div class="tech-item redis">
+                <span class="tech-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M6 12 16 7l10 5-10 5-10-5Z" fill="currentColor"/>
+                    <path d="M6 17 16 22l10-5M6 22l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span>Redis</span>
+              </div>
+
+              <div class="tech-item nginx">
+                <span class="tech-icon">N</span>
+                <span>Nginx</span>
+              </div>
+
+              <div class="tech-item ubuntu">
+                <span class="tech-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="8" stroke="currentColor" stroke-width="3"/>
+                    <circle cx="16" cy="4" r="3" fill="currentColor"/>
+                    <circle cx="26" cy="22" r="3" fill="currentColor"/>
+                    <circle cx="6" cy="22" r="3" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span>Ubuntu<br><small>(Server)</small></span>
+              </div>
+
+              <div class="tech-item storage">
+                <span class="tech-icon storage-box">
+                  <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 4 27 10.2 16 16.4 5 10.2 16 4Z" />
+                    <path d="M5 10.2v11.6L16 28V16.4L5 10.2Z" />
+                    <path d="M27 10.2v11.6L16 28V16.4l11-6.2Z" />
+                  </svg>
+                </span>
+                <span>S3 Compatible<br><small>(Object Storage)</small></span>
+              </div>
+
+            </div>
+
+            <!-- SET 2 / DUPLICATE FOR INFINITE LOOP -->
+            <div class="tech-stack-list" aria-hidden="true">
+
+              <div class="tech-item laravel">
+                <span class="tech-icon">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+                    alt=""
+                  />
+                </span>
+                <span>Laravel</span>
+              </div>
+
+              <div class="tech-item php">
+                <span class="tech-icon">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                    alt=""
+                  />
+                </span>
+                <span>PHP</span>
+              </div>
+
+              <div class="tech-item js">
+                <span class="tech-icon">JS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="tech-item mysql">
+                <span class="tech-icon">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                    alt=""
+                  />
+                </span>
+                <span>MySQL</span>
+              </div>
+
+              <div class="tech-item redis">
+                <span class="tech-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M6 12 16 7l10 5-10 5-10-5Z" fill="currentColor"/>
+                    <path d="M6 17 16 22l10-5M6 22l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span>Redis</span>
+              </div>
+
+              <div class="tech-item nginx">
+                <span class="tech-icon">N</span>
+                <span>Nginx</span>
+              </div>
+
+              <div class="tech-item ubuntu">
+                <span class="tech-icon">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="8" stroke="currentColor" stroke-width="3"/>
+                    <circle cx="16" cy="4" r="3" fill="currentColor"/>
+                    <circle cx="26" cy="22" r="3" fill="currentColor"/>
+                    <circle cx="6" cy="22" r="3" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span>Ubuntu<br><small>(Server)</small></span>
+              </div>
+
+              <div class="tech-item storage">
+                <span class="tech-icon storage-box">
+                  <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 4 27 10.2 16 16.4 5 10.2 16 4Z" />
+                    <path d="M5 10.2v11.6L16 28V16.4L5 10.2Z" />
+                    <path d="M27 10.2v11.6L16 28V16.4l11-6.2Z" />
+                  </svg>
+                </span>
+                <span>S3 Compatible<br><small>(Object Storage)</small></span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact" class="relative px-6 pb-8">
+      <div class="max-w-6xl mx-auto border-t border-slate-700/30">
+
+        <!-- CONTACT CTA -->
+        <div class="footer-contact">
+          <div>
+            <h2>Let’s build something<br>meaningful together.</h2>
+          </div>
+
+          <div class="footer-cta">
+            <p>
+               Available for business-focused web projects, from internal systems and workflow tools to e-commerce and company websites.
+            </p>
+
+            <a href="mailto:dnshaniff@gmail.com" class="footer-link">
+              Get in touch
+              <span>→</span>
+            </a>
+          </div>
+
+          <div class="footer-info">
+            <a href="mailto:dnshaniff@gmail.com">
+              <span class="footer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              dnshaniff@gmail.com
+            </a>
+
+            <a href="tel:+6281319229466">
+              <span class="footer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M8.5 5.5 6.6 3.6C6.1 3.1 5.3 3.1 4.8 3.6L3.6 4.8C2.7 5.7 3.2 8.4 5.8 12.2c2.6 3.8 6.2 6.6 9.4 7.7 1.8.6 3.1.7 3.8 0l1.3-1.3c.5-.5.5-1.3 0-1.8l-1.9-1.9c-.5-.5-1.3-.5-1.8 0l-.8.8c-.5.5-2.7-.6-5-2.9s-3.4-4.5-2.9-5l.8-.8c.4-.5.4-1.3-.1-1.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              +62 813-1922-9466
+            </a>
+
+            <div>
+              <span class="footer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s7-5.6 7-12a7 7 0 1 0-14 0c0 6.4 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/>
+                  <circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </span>
+              Sawangan, Depok City, 16516
+            </div>
+
+            <a href="https://www.linkedin.com/in/denis-hanif-prasetya-7a815516b" target="_blank" rel="noopener noreferrer">
+              <span class="footer-icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6.5 10v8M6.5 6v.01M10.5 18v-8M10.5 13.5c0-2 1.3-3.7 3.5-3.7 2.1 0 3.5 1.4 3.5 4V18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M4 4h16v16H4V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="underline">LinkedIn Profile</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+          <div class="footer-brand">
+            <span>DH</span>
+            <p>© 2026 Denis Hanif Prasetya</p>
+          </div>
+
+          <p>Built with purpose. Focused on impact.</p>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+
+  <script src="script.js"></script>
 </html>
